@@ -10,7 +10,7 @@ export const Filter = ({ filter, handleChange }) => (
       name="filter"
       placeholder="Enter filter"
       value={filter}
-      onChange={(e)=> handleChange(e.target.value)}
+      onChange={handleChange}
     />
   </div>
 );
