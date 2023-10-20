@@ -37,4 +37,5 @@
 .formBtn:hover {
     background-color: rgba(23, 26, 32, 1);
     cursor: pointer;
+    color: #0f0
 }

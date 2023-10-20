@@ -17,11 +17,17 @@ export const ContactForm = ({ handleSubmit }) => {
     setNumber(value);
   };
 
+  const reset = () => {
+  setName('');
+  setNumber('');
+  };
+  
   const handleFormSubmit = e => {
     e.preventDefault();
-    const form = e.currenrtTarget;
+    // const form = e.currentTarget;
     handleSubmit({ name: name, number: number });
-    form.reset();
+    // form();
+    reset();
   };
 
   return (
